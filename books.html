@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="icon" type="image/png" href="./assets/iconmonstr-book-17-24.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
@@ -56,11 +57,13 @@
                         <select id="filter" onchange="filterBooks(event)">
                             <option value="" disabled selected>Sort</option>
                             <option value="LOW_TO_HIGH">Price, Low to High</option>
-                            <option value="HIGH_TO_HIGH">Price, High to Low</option>
+                            <option value="HIGH_TO_LOW">Price, High to Low</option>
                             <option value="RATING">Rating</option>
                         </select>
                     </div>
-                    <div class="books"></div>
+                    <div class="books">
+                        <i class="fas fa-spinner books__loading--spinner"></i>
+                    </div>
                 </div>
             </div>
         </section>
